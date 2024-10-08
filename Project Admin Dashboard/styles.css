@@ -9,9 +9,13 @@
     --white-color: #fff;    
     --logo-text: 30px;
     --nav-text: 25px;
+    --profile-text: 25px;
+    --user-name: 35px;
+    --btn-text: 18px;
 }
 
 * {
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     margin: 0;
 }
@@ -90,4 +94,104 @@ li svg {
     padding: 0;
     font-size: var(--nav-text);
     color: var(--white-color);
+}
+
+.header {
+    padding: 20px 60px;
+    height: 25vh;
+    background-color: var(--white-color);
+}
+
+.top-row svg {
+    height: 35px;
+    fill: var(--h-color);
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 5px;
+    grid-template-rows: 2fr;
+}
+
+.search input {
+    border: none;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    padding: 5px 5px;
+    height: 40px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info span {
+    max-width: 50%;
+    font-size: var(--profile-text);
+    font-weight: 500;
+}
+
+.profile-info img {
+    margin-inline: 20px;
+    border-radius: 100%;
+    height: 60px;
+    width: auto;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 5px;
+    margin-top: 30px;
+    grid-template-rows: 2fr;
+}
+
+.bottom-row img {
+    margin-inline-end: 20px;
+    border-radius: 100%;
+    height: 90px;
+    width: auto;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.profile-name {
+    font-size: var(--user-name);
+    font-weight: 500;
+}
+
+.buttons-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-row button {
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    font-size: var(--btn-text);
+    border: 0;
+    border-radius: 40px;
+    width: 6.5rem;
+    justify-self: center;
+    padding: 15px 25px;
+    text-align: center;
 }
