@@ -6,8 +6,8 @@
     --p-color: #9e9e9e;
     --btn-color: #17b5f3;
     --side-bar: #17b5f3;
-    --white-color: #fff;  
-    --link-hover:#78d7fd;  
+    --white-color: #fff;
+    --link-hover: #78d7fd;
     --logo-text: 30px;
     --nav-text: 25px;
     --profile-text: 25px;
@@ -28,14 +28,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
     grid-template-areas:
-        'side-bar'
-        'header main-section';
+        'sidebar header' 'sidebar main';
 }
 
 .side-bar {
+    grid-area: sidebar;
     background-color: var(--side-bar);
     height: 100vh;
     display: flex;
@@ -57,7 +55,7 @@ body {
     font-size: var(--logo-text);
 }
 
-.logo > img {
+.logo>img {
     width: 40px;
 }
 
@@ -76,6 +74,7 @@ ul li:nth-child(n+2) {
     align-items: center;
     padding: 10px 50px;
 }
+
 .nav-bottom li {
     display: flex;
     flex-direction: row;
@@ -103,9 +102,10 @@ li svg {
 li:hover {
     background-color: var(--link-hover);
     border-radius: 20px;
-  }
+}
 
 .header {
+    grid-area: header;
     padding: 20px 60px;
     height: 25vh;
     background-color: var(--white-color);
@@ -206,3 +206,30 @@ li:hover {
     text-align: center;
 }
 
+.content-section {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "projects announce"
+        "projects trending";
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    gap: 1.2rem;
+}
+
+.project-section {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+    grid-area: projects;
+}
+.announce-section {
+    grid-area: announce;
+}
+.trending-section {
+    grid-area: trending;
+}
