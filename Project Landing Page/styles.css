@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+ul, a, li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.hero {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  
+    padding-block: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.hero-text, .hero-img {
+    width: 50%;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;  
+}
+
+.header {
+    height: 60vh;
+    padding-top: 30px;
+    background-color: rgb(12, 9, 22);
+}
+
+.image {
+    vertical-align: middle;
+    font-size: 30px;
+    color: black;
+    background-color: beige;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.image p {
+    text-align: center;
+    line-height: 350px;
+}
+
+.info-section {
+    height: 40vh;
+    margin: auto;
+    max-width: 1000px;  
+    padding-block: 50px;
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    border-radius: 10px;
+    height: 220px;
+    width: 220px;
+    border: 2px solid black;
+}
+
+.icons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-block p{
+    max-width: 220px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quote-section {
+    height: 40vh;
+    background-color: #919191;
+}
