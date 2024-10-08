@@ -219,7 +219,6 @@ li:hover {
 }
 
 .project-section {
-    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -232,4 +231,44 @@ li:hover {
 }
 .trending-section {
     grid-area: trending;
+}
+
+.project-card, .announce-section, .trending-section {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--white-color);
+}
+
+.card-text h3{
+    font-size: var();
+    padding-bottom: 10px;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.card-icons svg{
+    fill: var(--h-color);
+    height: 30px;
+    width: auto;
+}
+
+.anc-text:not(:last-child) {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.anc-text > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.9rem;
 }
