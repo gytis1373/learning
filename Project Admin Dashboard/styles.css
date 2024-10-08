@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --bg-color: #ececec;
+    --bg-color: #dfdfdf;
     --h-color: #000000;
-    --p-color: #555555;
+    --p-color: #9e9e9e;
     --btn-color: #17b5f3;
     --side-bar: #17b5f3;
-    --white-color: #fff;    
+    --white-color: #fff;  
+    --link-hover:#78d7fd;  
     --logo-text: 30px;
     --nav-text: 25px;
     --profile-text: 25px;
     --user-name: 35px;
     --btn-text: 18px;
+    --search-text: 16px;
 }
 
 * {
@@ -65,18 +67,20 @@ ul a {
 }
 
 ul li:nth-child(n+2) {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .nav-top li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px 50px;
 }
 .nav-bottom li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px 50px;
 }
 
 svg {
@@ -95,6 +99,11 @@ li svg {
     font-size: var(--nav-text);
     color: var(--white-color);
 }
+
+li:hover {
+    background-color: var(--link-hover);
+    border-radius: 20px;
+  }
 
 .header {
     padding: 20px 60px;
@@ -122,6 +131,7 @@ li svg {
     height: 40px;
     width: 100%;
     margin-left: 10px;
+    font-size: var(--search-text);
 }
 
 .search {
@@ -195,3 +205,4 @@ li svg {
     padding: 15px 25px;
     text-align: center;
 }
+
