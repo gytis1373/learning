@@ -102,7 +102,7 @@ body {
 }
 
 .singup-block input {
-    border: 1px solid rgb(190, 190, 190);
+    border: 1px solid #bebebe;
     border-radius: 5px;
     padding: 7px 30px;
 }
@@ -112,8 +112,9 @@ input:invalid {
 }
 
 input:focus {
-    border: 0.2px solid rgb(59, 62, 214);
-}
+    border-color: #1b27cc;
+    outline-color: #1b27cc;
+  }  
 
 .inputs-block {
     display: flex;
