@@ -55,7 +55,7 @@ btnNewGrid.addEventListener("click", () => {
 
         const cubeHeight = 640/gridSize;
         const cubeWidth = 640/gridSize;
-        if (gridSize > 2 && gridSize <= 100) {
+        if (gridSize >= 2 && gridSize <= 100) {
             for (let i = 0; i < (gridSize * gridSize); i++) {
         
                 const cube = document.createElement("div");
